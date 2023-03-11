@@ -1,0 +1,21 @@
+<div class="tituloEmpresa">
+  <h1>More Popullation Moviles - 5A</h1>
+</div>
+<section class="d-flex aling-item-center justify-content-center">
+  <form [formGroup]="formLogin">
+    <div class="row mt-4 text-center">
+      <div class="col-12">
+        <img src="{{ logo }}" alt="LOGO" class="logo">
+      </div>
+      <div class="col-12">
+        <input type="text" pInputText formControlName="username" autocomplete="off">
+      </div>
+      <div class="col-12 mt-2">
+        <input type="password" pPassword [feedback]="false" formControlName="password" />
+      </div>
+      <div class="col-12 mt-2">
+        <button pButton type="button" label="Iniciar sesión" (click)="login()" ></button>
+      </div>
+    </div>
+  </form>
+</section>
